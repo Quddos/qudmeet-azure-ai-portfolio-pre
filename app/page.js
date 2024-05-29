@@ -1,13 +1,48 @@
 "use client";
 import {useState} from "react"
 import Image from "next/image";
+import { stringify } from "postcss";
 
 export default function Home() {
   const [menuOpen, setMenuOpen]= useState(false);
+
+  const [messageInput, setMessageInput] = useState ('');
+
+  const [messages, setMessages] = useState([
+    {
+      role: 'assistant',
+      content: 'Hi, Welcome to QudMeet AI, a chance to Meet Quddus before meeting him. How can i help you know more about his Profile & Resume?'
+    },
+    
+  ])
+
+  const submitForm = async (e)=>{
+    e.preventDefault();
+    // alert('form submitted');
+    let newMessages = [...messages,{role:'user', content:messageInput}]
+    setMessages(newMessages);
+
+    setMessageInput('');
+
+    const apiMessage = await fetch(
+      '/api',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({messages: newMessages})
+      }
+    ).then(res => res.json());
+    setMessages([...newMessages,{role:'system', content:apiMessage.message}]);
+
+  }
+
   const toggleMobileMenu =()=>{
     setMenuOpen(!menuOpen)
 
   }
+  
   return (
    <>
       <header>
@@ -256,24 +291,22 @@ export default function Home() {
                   <div className="chat-box">
                     <div className="scroll-area">
                       <ul id="chat-log">
-                        <li>
-                          <span className="avatar bot">AI</span>
-                          <div className="message">
-                            Hi, I'm a friendly chatbot here to assist you with my portfolio and CV. How can I help?
+                        { messages.map((message, index)=>(
+                          <li key={index} className={`${message.role}`}>
+                          <span className={`avatar`}>{message.role=== 'user'? 'You': 'AI'}</span>
+                          <div className="message">{message.content}
+                           
                           </div>
                         </li>
-                        <li>
-                          <span className="avatar user">User</span>
-                          <div className="message">
-                            I have a question about this resume.
-                          </div>
-                        </li>
+
+                        ))}
+                        
                       </ul>
                     </div>
-                    <div className="chat-message">
-                      <input type="text" placeholder="Hey Adrian, what skills are you best at?"/>
+                    <form onSubmit={submitForm} className="chat-message">
+                      <input type="text" placeholder="Hey Quddus, what skills are you best at?" value={messageInput} onChange={e => setMessageInput(e.target.value)}/>
                         <button className="button black">Send</button>
-                    </div>
+                    </form>
                   </div>
                 </div>
               </section>
