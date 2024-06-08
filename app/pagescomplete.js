@@ -1,11 +1,11 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-
-import { faMagnifyingGlass, faCircleStop, faMicrophone, faStopCircle, faVolumeUp, faIdBadge } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faCircleStop, faMicrophone, faStopCircle, faVolumeUp, faIdBadge  } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Home() {
@@ -18,12 +18,8 @@ export default function Home() {
     },
   ]);
 
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalText, setModalText] = useState("");
-
   const [recognition, setRecognition] = useState(null);
   const [listening, setListening] = useState(false);
-
 
   useEffect(() => {
     if ('webkitSpeechRecognition' in window) {
@@ -104,29 +100,6 @@ export default function Home() {
     window.speechSynthesis.speak(utterance);
   };
 
-  const toggleModal = (text) => {
-
-    setModalText(text);
-
-    setModalOpen(!modalOpen);
-  };
-
-  const handleClick = (e, text) => {
-    e.preventDefault(); // Prevent default behavior
-    toggleModal(text);
-  };
-
-  const [whatsappChatOpen, setWhatsappChatOpen] = useState(false);
-
-  const toggleWhatsappChat = () => {
-    setWhatsappChatOpen(!whatsappChatOpen);
-  };
-
-  
-  
-  
-  
-
   return (
     <>
       <header>
@@ -171,10 +144,10 @@ export default function Home() {
                 Software Engineer with 5 years of experience designing and implementing scalable, high-performance infrastructure solutions. <span> I possess a strong background in multi-technical domains, in Project development, AI, Software Development, Saas, DevOps, Technical Support etc. </span>
               </p>
               <div className="call-to-action">
-                <a href="./Raheem_Qudus.pdf" className="button black">
+                <a href="./Sample_Resume_Template.pdf" className="button black">
                   View Resume
                 </a>
-                <a href="mailto:raheemrquddus@gmail.com" className="button white">
+                <a href="mailto:hello@adriantwarog.com" className="button white">
                   Contact Me
                 </a>
 
@@ -218,7 +191,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+        
         <section id="skills" className="skills container">
           <h2>
             <small>About Me</small>
@@ -234,11 +207,6 @@ export default function Home() {
                 <li>React</li>
                 <li>Angular</li>
                 <li>Vue</li>
-                <li>SCSS</li>
-                <li>jQuery</li>
-                <li>Boostrap & Taiwind</li>
-                <li>GraphQL</li>
-                <li>AJAX/API</li>
 
               </ul>
 
@@ -250,58 +218,54 @@ export default function Home() {
                 <li>Python</li>
                 <li>Java</li>
                 <li>PHP</li>
-                <li>Webhooks</li>
-                <li>Dart</li>
-                <li>Nextjs</li>
+                <li>Ruby</li>
               </ul>
 
 
 
-              <h3 >AI/ML Tech Stack</h3>
+              <h3 >AI/ML</h3>
               <ul>
-                <li>PineonDB</li>
-                <li>Langchain</li>
-                <li>TensorFlow</li>
-                <li>OpenAI</li>
-                <li>Vercel AI Sdk</li>
-                <li>Prisma</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>Ruby</li>
               </ul>
+
+
 
               <h3 >CLOUD/ DevOps</h3>
               <ul>
-                <li>Amazon AWS</li>
-                <li>Linux</li>
-                <li>Cloud</li>
-                <li>Automation</li>
-                <li>AWS</li>
-                <li>Firebase</li>
-                <li>Microsoft Azure</li>
-              </ul>
-
-              <h3 >Frameworks</h3>
-              <ul>
-                <li>wordpress</li>
-                <li>Joomla</li>
-                <li>Shopify</li>
-                <li>Stripe</li>
-                <li>Paypal</li>
-                <li>Hubspot</li>
-               
-              </ul>
-
-              <h3 >UI/UX Graphics Design</h3>
-              <ul>
-                <li>Figma</li>
-                <li>Flutterwave</li>
-                <li>Canva</li>
-                <li>Adobe Photoshop</li>
-                <li>Sketch</li>
-                <li>Workflow Diagram</li>
-               
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>Ruby</li>
               </ul>
 
             </div>
-          
+            <div className="right-column">
+
+              <p>
+                Hi I'm Adrian Twarog, a designer and developer who creates educational content on YouTube to teach others about HTML, CSS and JavaScript.  I'm interested in AI topics which is why I also add things like ChatGPT into my projects these days!
+              </p>
+
+
+              <p style={{ top: "30px" }}>
+                I'm currently working on a project that uses Azure AI to create a chatbot that can help answer questions about web development.  I'm also working on a project that uses React and Next.js to create a portfolio website design that looks good.
+              </p>
+
+              <p style={{ top: "20px" }}>
+                I'm currently working on a project that uses Azure AI to create a chatbot that can help answer questions about web development.  I'm also working on a project that uses React and Next.js to create a portfolio website design that looks good.
+              </p>
+
+              <p sstyle={{ top: "30px" }}>
+                I'm currently working on a project that uses Azure AI to create a chatbot that can help answer questions about web development.  I'm also working on a project that uses React and Next.js to create a portfolio website design that looks good.
+              </p>
+
+            </div>
           </div>
         </section>
         <section className="work-experience container ">
@@ -380,7 +344,7 @@ export default function Home() {
               <h3>QUDMEET AI Chatbot</h3>
               <p>Welcome! This chatbot is designed to help you learn about my skills, work experience, and qualifications. Feel free to ask questions to get to know me better. </p>
               <p>You can also download my resume. I'm actively seeking new opportunities, so if you have a project in mind, let's connect!</p>
-              <a href="./Raheem_Qudus.pdf" className="button black">Download Resume</a>
+              <a href="./Sample_Resume_Template.pdf" className="button black">Download Resume</a>
             </div>
             <div className="chat-box">
               <div className="scroll-area">
@@ -419,7 +383,7 @@ export default function Home() {
 
         <section className="container" id="portfolio">
           <div className="main-title">
-            <h2>My Recent <span >Projects</span></h2>
+            <h2>My <span>Projects</span></h2>
           </div>
 
           <div className="portfolios">
@@ -428,33 +392,18 @@ export default function Home() {
                 <img src="imgs/port1.png" alt="" />
               </div>
               <div className="hover-items">
-                {modalOpen && (
-                  <div className="modal">
-                    <div className="modal-content">
-                      <span className="close" onClick={() => setModalOpen(false)}>
-                        &times;
-                      </span>
-                      {/* Your modal content here */}
-                      <p><small>Tech Use:</small>{modalText}</p>
-                    </div>
-                  </div>
-                )}
-                <h3>QudMEET AI Portfolio</h3>
+                <h3>Project Source</h3>
                 <div className="icons">
-                  <a href="https://github.com/Quddos/qudmeet-azure-ai-portfolio" className="icon">
+                  <a href="#" className="icon">
                     <FontAwesomeIcon
                       icon={faMagnifyingGlass} rotation={90}
                     />
                   </a>
-                  <a href="" className="icon">
-
-
-
-                    <FontAwesomeIcon icon={faIdBadge} onClick={(e) => handleClick(e, "Next.Js, Azure, OpenAI, Tailwind, Framer...")} />
-
+                  <a href="#" className="icon">
+                    <FontAwesomeIcon icon={faIdBadge} />
 
                   </a>
-
+                  
                 </div>
               </div>
             </div>
@@ -463,149 +412,118 @@ export default function Home() {
                 <img src="imgs/port2.jpg" alt="" />
               </div>
               <div className="hover-items">
-              {modalOpen && (
-                  <div className="modal">
-                    <div className="modal-content">
-                      <span className="close" onClick={() => setModalOpen(false)}>
-                        &times;
-                      </span>
-                      {/* Your modal content here */}
-                      <p><small>Tech Use:</small>{modalText}</p>
-                    </div>
-                  </div>
-                )}
-                <h3>ChatPDF AI</h3>
+                <h3>Project Source</h3>
                 <div className="icons">
-                  <a href="https://github.com/Quddos/bd-docai" className="icon">
+                  <a href="#" className="icon">
                     <FontAwesomeIcon
                       icon={faMagnifyingGlass} rotation={90}
                     />
                   </a>
-                  <a href="" className="icon">
-                    <FontAwesomeIcon icon={faIdBadge} onClick={(e) => handleClick(e, "Langchain,Vercel,AWS S3, OpenAI,Nextjs,Stripe, NeomBD.......")} />
-                  </a>
+                  <a href="#" className="icon">
+                    <FontAwesomeIcon icon={faIdBadge} />
 
+                  </a>
+                  
                 </div>
               </div>
             </div>
             <div className="portfolio-item">
               <div className="image">
-                <img src="imgs/port3.png" alt="" />
+                <img src="imgs/port3.jpg" alt="" />
               </div>
               <div className="hover-items">
-              {modalOpen && (
-                  <div className="modal">
-                    <div className="modal-content">
-                      <span className="close" onClick={() => setModalOpen(false)}>
-                        &times;
-                      </span>
-                      {/* Your modal content here */}
-                      <p><small>Tech Use:</small>{modalText}</p>
-                    </div>
-                  </div>
-                )}
-                <h3>LMS- Learning Management system</h3>
+                <h3>Project Source</h3>
                 <div className="icons">
-                  <a href="https://learn.bdnaturetech.com/" className="icon">
+                  <a href="#" className="icon">
                     <FontAwesomeIcon
                       icon={faMagnifyingGlass} rotation={90}
                     />
                   </a>
-                  <a href="" className="icon">
-                    <FontAwesomeIcon icon={faIdBadge} onClick={(e) => handleClick(e, "Laravel,Php,Stripe,React, Sql, Tailwind CSS, RESTful API, PhPunit.......")} />
-                  </a>
+                  <a href="#" className="icon">
+                    <FontAwesomeIcon icon={faIdBadge} />
 
-                </div>
-              </div>
-            </div>
-            
-            <div className="portfolio-item">
-              <div className="image">
-                <img src="imgs/port5.png" alt="" />
-              </div>
-              <div className="hover-items">
-              {modalOpen && (
-                  <div className="modal">
-                    <div className="modal-content">
-                      <span className="close" onClick={() => setModalOpen(false)}>
-                        &times;
-                      </span>
-                      {/* Your modal content here */}
-                      <p><small>Tech Use:</small>{modalText}</p>
-                    </div>
-                  </div>
-                )}
-                <h3>Job Compete Penetration Portal</h3>
-                <div className="icons">
-                  <a href="https://github.com/Quddos/bdjob" className="icon">
-                    <FontAwesomeIcon
-                      icon={faMagnifyingGlass} rotation={90}
-                    />
                   </a>
-                  <a href="" className="icon">
-                    <FontAwesomeIcon icon={faIdBadge} onClick={(e) => handleClick(e, "Nexus, firebase, React, Radix UI, Taiwind CSS, tRPC, Prisma........")} />
-                  </a>
-
+                  
                 </div>
               </div>
             </div>
             <div className="portfolio-item">
               <div className="image">
-                <img src="imgs/port6.png" alt="" />
+                <img src="imgs/port4.jpg" alt="" />
               </div>
               <div className="hover-items">
-              {modalOpen && (
-                  <div className="modal">
-                    <div className="modal-content">
-                      <span className="close" onClick={() => setModalOpen(false)}>
-                        &times;
-                      </span>
-                      {/* Your modal content here */}
-                      <p><small>Tech Use:</small>{modalText}</p>
-                    </div>
-                  </div>
-                )}
-                <h3>DevOps Bootcamp Project Instructor</h3>
+                <h3>Project Source</h3>
                 <div className="icons">
-                  <a href="https://github.com/Quddos/DevOps-20-Days-2024" className="icon">
+                  <a href="#" className="icon">
                     <FontAwesomeIcon
                       icon={faMagnifyingGlass} rotation={90}
                     />
                   </a>
-                  <a href="" className="icon">
-                    <FontAwesomeIcon icon={faIdBadge} onClick={(e) => handleClick(e, "Marven, Apache Tomcat, Jenkins, Ansible, Kubernetes........")} />
-                  </a>
+                  <a href="#" className="icon">
+                    <FontAwesomeIcon icon={faIdBadge} />
 
+                  </a>
+                  
                 </div>
               </div>
             </div>
             <div className="portfolio-item">
               <div className="image">
-                <img src="imgs/port7.png" alt="" />
+                <img src="imgs/port5.jpg" alt="" />
               </div>
               <div className="hover-items">
-              {modalOpen && (
-                  <div className="modal">
-                    <div className="modal-content">
-                      <span className="close" onClick={() => setModalOpen(false)}>
-                        &times;
-                      </span>
-                      {/* Your modal content here */}
-                      <p><small>Tech Use:</small>{modalText}</p>
-                    </div>
-                  </div>
-                )}
-                <h3>Other Projects</h3>
+                <h3>Project Source</h3>
                 <div className="icons">
-                  <a href="https://github.com/Quddos/" className="icon">
+                  <a href="#" className="icon">
                     <FontAwesomeIcon
                       icon={faMagnifyingGlass} rotation={90}
                     />
                   </a>
-                  <a href="" className="icon">
-                    <FontAwesomeIcon icon={faIdBadge} onClick={(e) => handleClick(e, "Other Projects.....")} />
-                  </a>
+                  <a href="#" className="icon">
+                    <FontAwesomeIcon icon={faIdBadge} />
 
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+            <div className="portfolio-item">
+              <div className="image">
+                <img src="imgs/port2.jpg" alt="" />
+              </div>
+              <div className="hover-items">
+                <h3>Project Source</h3>
+                <div className="icons">
+                  <a href="#" className="icon">
+                    <FontAwesomeIcon
+                      icon={faMagnifyingGlass} rotation={90}
+                    />
+                  </a>
+                  <a href="#" className="icon">
+                    <FontAwesomeIcon icon={faIdBadge} />
+
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+            <div className="portfolio-item">
+              <div className="image">
+                <img src="imgs/port7.jpg" alt="" />
+              </div>
+              <div className="hover-items">
+                <h3>Project Source</h3>
+                <div className="icons">
+                  <a href="#" className="icon">
+                    <FontAwesomeIcon
+                      icon={faMagnifyingGlass} rotation={90}
+                    />
+                  </a>
+                  <a href="#" className="icon">
+                    <FontAwesomeIcon icon={faIdBadge} />
+
+                  </a>
+                  
                 </div>
               </div>
             </div>
@@ -620,139 +538,25 @@ export default function Home() {
           </h2>
           <div className="bento-grid">
             <a href="#" className="bento-item"> <span>help</span>
-              <img src="./imgs/bento-1.png" alt="BGCCI" width="100%" />
+              <img src="./imgs/bento-1.jpg" alt="BGCCI" width="100%" />
             </a>
             <a href="#" className="bento-item">
-              <img src="./imgs/bento-2.png" alt="Churhview" width="100%" />
+              <img src="./imgs/bento-2.jpg" alt="Churhview" width="100%" />
             </a>
             <a href="#" className="bento-item">
-              <img src="./imgs/bento-3.png" alt="Harley" width="100%" />
+              <img src="./imgs/bento-3.jpg" alt="Harley" width="100%" />
             </a>
             <a href="#" className="bento-item">
-              <img src="./imgs/bento-4.png" alt="Bunbury" width="100%" />
+              <img src="./imgs/bento-5.jpg" alt="Bunbury" width="100%" />
             </a>
             <a href="#" className="bento-item">
-              <img src="./imgs/bento-6.png" alt="Running" width="100%" />
+              <img src="./imgs/bento-6.jpg" alt="Running" width="100%" />
             </a>
             <a href="https://www.linkedin.com/posts/quddos_techmahindra-edygrad-edygrad-activity-7124810204998750208-uQfV?utm_source=share&utm_medium=member_desktop" className="bento-item">
               <img src="./imgs/bento-7.png" alt="School" width="100%" />
             </a>
           </div>
         </section>
-
-        <section id="Achievement" className="skills container">
-          <h2>
-            <small>Record of </small>
-            Achievements | Volunteer
-          </h2>
-          <div className="holder-blue">
-            <div className="left-column">
-            <h3>2023</h3>
-              <ul>
-                <li>Cross-Plarform application Development Workshop - Instructor
-                Visakha Engineering College</li>
-              </ul>
-
-              <h3>2023</h3>
-              <ul>
-                <li>Young Achiever Exceptional Performance by (GCGC)</li>
-              </ul>
-
-              <h3>2022-2023</h3>
-              <ul>
-                <li>Leadership Skills Attestation Award (GISA)</li>
-              </ul>
-
-              <h3>2022</h3>
-              <ul>
-                <li>•	Vigilance Awareness Week (Participant) - by Union Bank Of India</li>
-              </ul>
-
-              <h3>2021</h3>
-              <ul>
-                <li>Advance Africa Scholarship Grant </li>
-              </ul>
-
-              <h3>2021</h3>
-              <ul>
-                <li>Minister of Education (Study In India) - Best Shot Recognition </li>
-              </ul>
-
-              <h3>2020</h3>
-              <ul>
-                <li>Merit Scholarship Award Winning the SII (Study In India)  </li>
-              </ul>
-
-              <h3>2019</h3>
-              <ul>
-                <li>Promotion Award (Ark Technologies Group)  </li>
-              </ul>
-
-
-              
-
-
-              
-
-
-
-              
-
-            </div>
-            <div className="right-column">
-
-              <p style={{ paddingTop: "60px" }}>I Tutored around 70+ Visakha Engineering college students on application development, using Flutter and Firebase.
-              </p>
-
-
-              <p style={{ paddingTop: "40px" }}>
-              Awarded by Gitam University Career Guidance Council, for completion of 4 internships and achievement of Extracurricular activities in the academy year 2021-2023
-              </p>
-
-              <p style={{ paddingTop: "35px"}}>
-              Awarded by the Directorate of Student Life Visakhapatnam for representing Gitam University international students (over 500+ students) as they elected President for the academy year 2022/2023,
-Also organized more than 18+ events with my Teammates for internal and external social activities.
-
-              </p>
-
-              <p style={{ paddingTop: "20px" }}>
-              workshop organized by Union Bank of India on the cyber risk involved in the Electronic Transaction process
-              </p>
-
-              <p style={{ paddingTop: "60px"}}>
-              Programming for Data Science Certification Course Scholarship, awarded by Udemy | Access Bank of Nigeria.
-•	2020 - Merit Scholarship Award Winning the SII (Study In India) 2020 scholarship award worth 10,500 USD, Under the Ministry of Education India, based on Outstanding performance in the SAT examination and Academy records.
-
-              </p>
-
-              <p style={{ paddingTop: "20px" }}>
-              Best photoshoot of the month recognition.
-              </p>
-
-              <p style={{paddingTop: "60px" }}>
-              Winning the SII (Study In India) 2020 scholarship award worth 10,500 USD, Under the Ministry of Education India, based on Outstanding performance in the SAT examination and Academy records.
-              </p>
-
-              <p style={{ paddingTop: "40px"}}>
-              Award based on outstanding performance, and dedication to duties, awarded by Ark Technologies Group.
-              </p>
-
-              
-             
-
-            </div>
-          </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
 
       </main>
     </>
