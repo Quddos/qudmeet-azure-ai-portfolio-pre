@@ -13,13 +13,9 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
-<<<<<<< HEAD
+
     "ai": "^3.2.32",
-=======
-    "@radix-ui/react-dialog": "^1.1.1",
-    "ai": "^3.2.32",
-    "class-variance-authority": "^0.7.0",
->>>>>>> 96deb17de6b0b61ea82b23f9520a97f1205f2cda
+
     "lottie-web": "^5.12.2",
     "lucide-react": "^0.412.0",
     "next": "14.2.3",
