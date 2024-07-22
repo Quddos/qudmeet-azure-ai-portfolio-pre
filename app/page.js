@@ -1,11 +1,12 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-
 import { faMagnifyingGlass, faCircleStop, faMicrophone, faStopCircle, faVolumeUp, faIdBadge } from "@fortawesome/free-solid-svg-icons";
+
+
 
 
 export default function Home() {
@@ -23,6 +24,9 @@ export default function Home() {
 
   const [recognition, setRecognition] = useState(null);
   const [listening, setListening] = useState(false);
+ 
+
+
 
 
   useEffect(() => {
@@ -382,8 +386,8 @@ export default function Home() {
               <p>You can also download my resume. I'm actively seeking new opportunities, so if you have a project in mind, let's connect!</p>
               <a href="./Raheem_Qudus.pdf" className="button black">Download Resume</a>
             </div>
-            <div className="chat-box">
-              <div className="scroll-area">
+            <div  className="chat-box">
+              <div  className="scroll-area">
                 <ul id="chat-log">
                   {messages.map((message, index) => (
                     <li key={index} className={`${message.role}`}>
@@ -743,6 +747,9 @@ Also organized more than 18+ events with my Teammates for internal and external 
             </div>
           </div>
         </section>
+   
+       
+
 
 
 
