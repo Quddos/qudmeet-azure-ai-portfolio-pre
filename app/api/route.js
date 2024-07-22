@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import { OpenAIClient, AzureKeyCredential } from "@azure/openai";
+import { StreamingTextResponse } from "ai";
+
 
 
 const endpoint = process.env.AZURE_OPENAI_ENPOINT;
@@ -24,6 +26,9 @@ ${DATA_RESUME}
 
 Help users learn more about Quddus from his remuse.`
     })
+    // const response = StreamingTextResponse[] = await client.createChatCompletionStream(model, messages, {
+    //     maxTokens: 129,
+    // })
 
     
 
@@ -51,7 +56,7 @@ Artificial Intelligence
 Life Science and Integration
 Central Model Technologies 
 Integration of AI in different Sector
-Open to different availability 
+Open to different availability Project
 
 EDUCATION 
 
@@ -271,4 +276,8 @@ Research and Publication:
 Job Compete Penetrating Portal, Automation Procedural way of solving challenges faced by international students during different campus drives coordinated in Gitam University, by the GCGC (Gitam Career Guardian Council). - DOI: 10.13140/RG.2.2.25123.22568
 	Contributed Faith E.O., S. Padma, Raheem., Q.O (2022)
 Study of the Development of Lightweight and Secure IOT Device Management Framework- ISSN: 2454-132x
-	Discovery of Measuring Station flex connectivity bridge default, as a failure of excess error in Wincor Nixdorf 2050Xe ATM (Automated Teller Machine) dispenser module and how to fix it. (2019)`
+	Discovery of Measuring Station flex connectivity bridge default, as a failure of excess error in Wincor Nixdorf 2050Xe ATM (Automated Teller Machine) dispenser module and how to fix it. (2019)
+
+
+Hobbies: Badminton, Reading, Table Tennis`
+
