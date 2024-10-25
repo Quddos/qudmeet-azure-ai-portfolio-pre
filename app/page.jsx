@@ -332,7 +332,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
           >
             <motion.img
-              src="/imgs/raheem.png"
+              src="/imgs/raheem.PNG"
               alt="Quddus"
               className="w-100% p-2 rounded-lg shadow-lg"
               animate={{
@@ -598,30 +598,8 @@ export default function Home() {
         <FloatingFAQ />
         <FooterSignature />
 
-        <div className="flex flex-col md:flex-row gap-8">
-          <div className="md:w-1/3">
-            <h3 className="text-xl font-semibold mb-4">Contact Me</h3>
-            <p className="mb-4">
-              For any inquiries, questions, or collaboration opportunities, please
-              don't hesitate to reach out.
-            </p>
-            <div className="flex items-center gap-4">
-              <a
-                href="mailto:raheemquddus@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-blue-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                ></svg>
-                </a>
-            </div>
-        </div>
-        </div>
+       
+        
       </main>
       {/* This is for popvid */}
       {/* About Modal */}

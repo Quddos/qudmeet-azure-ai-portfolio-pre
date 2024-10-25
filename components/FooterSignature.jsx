@@ -35,7 +35,7 @@ const FooterSignature = () => {
       }}
     >
       <Image
-        src="/imgs/raheem.png?height=32&width=32"
+        src="/imgs/raheem.PNG?height=32&width=32"
         alt="Raheem Quddus"
         width={32}
         height={32}
