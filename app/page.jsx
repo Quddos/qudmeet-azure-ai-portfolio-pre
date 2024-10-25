@@ -332,7 +332,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
           >
             <motion.img
-              src="./imgs/raheem.png"
+              src="/imgs/raheem.png"
               alt="Quddus"
               className="w-100% p-2 rounded-lg shadow-lg"
               animate={{
@@ -607,7 +607,7 @@ export default function Home() {
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="mailto:raheem.quddus@gmail.com"
+                href="mailto:raheemquddus@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
