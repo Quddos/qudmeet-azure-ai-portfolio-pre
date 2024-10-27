@@ -332,7 +332,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
           >
             <motion.img
-              src="public/imgs/Raheem.png"
+              src="/imgs/quddus.png"
               alt="Quddus"
               className="w-100% p-2 rounded-lg shadow-lg"
               animate={{
