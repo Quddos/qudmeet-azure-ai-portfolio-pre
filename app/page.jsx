@@ -268,8 +268,8 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-300 via-blue-400 to-yellow-300">
-      <header className="bg-white bg-opacity-80 shadow-md px-4 z-40">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-300 via-blue-400 to-yellow-300 overflow-x-hidden">
+      <header className="bg-white bg-opacity-80 shadow-md px-4 ">
         <a href="#" className="logo-holder">
           <div className="logo">Q </div>
           <div className="logo-text">Qudmeet AI</div>
@@ -291,10 +291,7 @@ export default function Home() {
               <a href="#projects">Projects</a>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/in/quddos/"
-                className="button"
-              >
+              <a href="https://www.linkedin.com/in/quddos/" className="button">
                 Arti
                 <span style={{ color: "var(--yellow)", font: "bold" }}>
                   cles
@@ -597,11 +594,6 @@ export default function Home() {
         <Certifications />
         <FloatingFAQ />
         <FooterSignature />
-
-       
-        
-       
-        
       </main>
       {/* This is for popvid */}
       {/* About Modal */}
