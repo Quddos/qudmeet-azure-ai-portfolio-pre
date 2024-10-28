@@ -554,7 +554,7 @@ export default function Home() {
                 />
                 <button
                   type="submit"
-                  className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200"
+                  className="bg-blue-600 text-white px-2 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200"
                 >
                   Send
                 </button>
