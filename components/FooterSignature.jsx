@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const FooterSignature = () => {
   const [text, setText] = useState('')
-  const fullText = "All-right reserved @Raheem Quddus...... :::Qudmeet AI Portfolio"
+  const fullText = "All-right reserved @.... :Qudmeet AI Portfolio"
 
   useEffect(() => {
     let index = 0
@@ -35,7 +35,7 @@ const FooterSignature = () => {
       }}
     >
       <Image
-        src="/imgs/raheem.PNG?height=32&width=32"
+        src="/imgs/quddus.png?height=32&width=32"
         alt="Raheem Quddus"
         width={32}
         height={32}
