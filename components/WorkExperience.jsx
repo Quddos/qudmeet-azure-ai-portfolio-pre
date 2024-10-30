@@ -34,7 +34,7 @@ const workExperiences = [
   },
   {
     id: 4,
-    year: 2012,
+    year: 2022,
     newyear: "",
     company: "Elakk Technologies",
     role: "Junior Technical Developer",
