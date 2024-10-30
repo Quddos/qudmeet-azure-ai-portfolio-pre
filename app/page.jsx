@@ -12,7 +12,7 @@ import AchievementBreakout from "@/components/AchievementBreakout";
 import BentoGrid from "@/components/BentoGrid";
 // import ArticleSidebar from '@/components/ArticleSidebar'
 import EducationSession from "@/components/EducationSession";
-import WorkExperience from "@/components/WorkExperience";
+import WorkExperience from "../components/WorkExperience";
 import Certifications from "@/components/Certifications";
 import FloatingFAQ from "@/components/FloatingFAQ";
 import FooterSignature from "@/components/FooterSignature";
