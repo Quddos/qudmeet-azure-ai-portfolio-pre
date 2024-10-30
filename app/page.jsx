@@ -495,7 +495,7 @@ export default function Home() {
                 opportunities, so if you have a project in mind, let's connect!
               </p>
               <a
-                href="./Raheem--Qudus.pdf"
+                href="./Raheem-Qudus.pdf"
                 className="inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200"
               >
                 Download Resume
