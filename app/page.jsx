@@ -379,13 +379,7 @@ export default function Home() {
                 <FontAwesomeIcon icon={faGithub} className="mr-2" />
                 GitHub
               </a>
-              {/* <button
-                onClick={() => setShowVideoModal(true)}
-                className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors duration-200"
-              >
-                <FontAwesomeIcon icon={faVideo} className="mr-2" />
-                Video Message
-              </button> */}
+             
             </div>
           </div>
         </section>
