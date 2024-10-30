@@ -8,6 +8,7 @@ const workExperiences = [
   {
     id: 1,
     year: 2024,
+    newyear: "-current",
     company: "OUTLIER",
     role: "AI Training Engineer",
     description:
@@ -15,15 +16,17 @@ const workExperiences = [
   },
   {
     id: 2,
-    year: 2024,
+    year: 2023,
+    newyear: "-current",
     company: "EDYGRAD",
-    role: "CTO - Software Engineer",
+    role: "Software Engineer - CTO",
     description:
       "Designed and planned product development solutions, ensuring performance, security, and scalability for diverse projects",
   },
   {
     id: 3,
     year: 2022,
+    newyear: "",
     company: "BDNATURETECH",
     role: "Senior Software Developer",
     description:
@@ -32,6 +35,7 @@ const workExperiences = [
   {
     id: 4,
     year: 2012,
+    newyear: "",
     company: "Elakk Technologies",
     role: "Junior Technical Developer",
     description:
@@ -40,6 +44,7 @@ const workExperiences = [
   {
     id: 6,
     year: 2021,
+    newyear: "",
     company: "Brainlox (Triluxo) Technologies.",
     role: "Python Programming Language Instructor(Intern)",
     description:
@@ -48,6 +53,7 @@ const workExperiences = [
   {
     id: 7,
     year: 2018,
+    newyear: "-2020",
     company: "Ark Technologies Group",
     role: "ATM Software Technical Engineer",
     description:
@@ -127,7 +133,7 @@ const WorkExperience = () => {
                   {exp.description}
                 </p>
                 <div className="text-sm text-gray-500">
-                <TypewriterText text={`Worked here in ${exp.year}`} />
+                <TypewriterText text={`Worked here in ${exp.year}  ${exp.newyear}`} />
                   {/* <TypewriterText  text={`Worked here in ${exp.year}`} /> */}
                 </div>
               </motion.div>
@@ -148,7 +154,7 @@ const WorkExperience = () => {
                   repeat: Infinity,
                 }}
               >
-                {exp.year}
+                {exp.year} {exp.newyear}
               </motion.div>
             </div>
           </motion.div>
