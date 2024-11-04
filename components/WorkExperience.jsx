@@ -17,9 +17,9 @@ const workExperiences = [
   {
     id: 2,
     year: 2023,
-    newyear: "-current",
+    newyear: "-2024",
     company: "EDYGRAD",
-    role: "Software Engineer - CTO",
+    role: "Full Stack Developer",
     description:
       "Designed and planned product development solutions, ensuring performance, security, and scalability for diverse projects",
   },
@@ -28,7 +28,7 @@ const workExperiences = [
     year: 2022,
     newyear: "",
     company: "BDNATURETECH",
-    role: "Senior Software Developer",
+    role: "Software Specialist",
     description:
       "Build a scalable and innovative platform, delivering exceptional user experiences and driving continuous growth and expansion using AI, Edge Runtime, and RAG drive innovation",
   },
@@ -37,7 +37,7 @@ const workExperiences = [
     year: 2022,
     newyear: "",
     company: "Elakk Technologies",
-    role: "Junior Technical Developer",
+    role: "Back-End Developer",
     description:
       "Effective collaboration actively engaging with the front-end developers, ensured a cohesive integration between the API’s functionality and the user interface",
   },

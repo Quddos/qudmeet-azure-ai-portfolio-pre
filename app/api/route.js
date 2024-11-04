@@ -46,29 +46,98 @@ Help users learn more about Quddus from his data.`
 // Model data
 const DATA_RESUME = `
 
-Raheem Qudus 
-Rquddusraheem@gmail.com
-10th November 2023
+Raheem Qudus
+Portfolio: Qudmeet AI 					 			Email:	raheemrquddus@gmail.com
+LinkedIn: https://www.linkedin.com/in/quddos/                                                              GitHub: http://github.com/quddos
 
-SUMMARY
+Education
+Bca. Computer Application								2020-2023
+Gitam University 
+AP. India
 
-3 years and 6 months of professional experience in software engineering and testing using Java, spring, hibernate, and Google Web Toolkit, alongside further experience using PHP, flutter, and Laravel for development.
+BSc. Computer Science								2014-2018
+University of Ilorin 
+Kwara. Nigeria
 
-PROFESSIONAL SKILLS
+Certifications
+Java MasterClass-Tim Buchalka (Udemy) 						2024
+Data Structure & Algorithm in Java -Skillsoft (Vodafone)					2024
+Web Fundamental Development (Vodafone)						2024
+Google Project Management: Professional Certificate					2023
+AWS Cloud Practitioner Essentials							2021
+Microsoft Certified Trainer (MCT)							2021
+Introduction to TCP/IP (YONSEI UNIVERSITY)						2021
+Data Science and Analytics								2021
+Customer Support Data Analysis (COURSERA)						2021
+Mobile Application Development (ACM)						2020
 
-Example:
-Programming Languages: Java, Visual C++, Python, PHP, Dart
-Databases: SQL, MS Access, NoSQL, SQLite, ORM
-Tools: UML, MS Visual Studio 97, Visual Source Safe, GIT, Eclipse, Visual Studio Code, Postman
-Platforms: Windows 95/98/NT, UNIX, IOS
-Networks: Perl, UNIX, Windows NT, HTML
-Others: Strong knowledge of the software lifecycle, CORBA, EJB, MOM, CI/CD, Technical Documentation, Version Control, and Configuration Management
+Technical Skills and Competences
+Full Stack Developer 
+Front End: HTML, CSS, JavaScript, SASS, SCSS, LESS, React, Angular, jQuery Bootstrap, REST, GraphQL, AJAX/API, Responsive Design, WC3, flutter, Laravel, wordpress, Tailwind css, Framer
+Back End/Programming: 	Java, NodeJS, PHP, Express, IIS, C#, Webhooks, Dart, C++, typescript
+Database:       NoSQL Apache, SQL, PostgrwSQL, Firebase, PineonDB, Mongodb, MySQL
+Platforms:	Amazon AWS, Linux, .NET Windows, Cloud, Automation, Firebase, Microsoft Azure, API, Vercel ,VPS, Docker, Kubernetes
+Frameworks:	WordPress, Joomla, PrestaShop, Shopify, Stripe, PayPal, GitHub, NextJs
+Management:	Google Analytics, Adwords, Facebook Ads, Web Masters, etc 
+
+AI Tech Stack
+Platforms:	 PineoneDB, Langchain, OpenAI, Vercel AI Sdk, 
+UX and UI Designer 
+Platforms: 	Adobe Photoshop, Sketch, Figma, Canva, Flutter wave 
+UI: 		Website Mock-ups, App Mock-ups, Infographics, Stylesheets, Logos 
+UX: 		Wireframing, Workflow Diagrams, Technical Specifications 
+
+Robust Tech Stack
+Microsoft Office: 	Word, Excel, PowerPoint 
+Testing: Manual Testing, UAT, Performance Testing, Regression and End-to-end testing
+CI/CD: GIT, GITHUB actions, Jenkins
+Scripting Language: Bash, PowerShell, Yaml, Json
+
+Additional Skill
+Fluent Language: English
+Soft Skills: Leadership and Team Player, Time Management, Digital Skills, Problem Solving, Teaching & Mentor, Excellent Communication, Project Management, Product Development and Upscaling.
+
+
+Employment History
+
+AI Training Engineer (Part-time) 						                          2024 Aug– Current
+Outlier
+	Trained AI models on divers datasets, improving model accuracy and reliability.
+	Generated high-quality training data in Large language model, and advancing AI capabilities
+	Developed AI Model and Evaluated model performance, identifying areas for improvement and optimizing results.
+Full Stack Developer 								           2023 Jun – Sep 2024
+Edygrad Private Ltd. Link
+	Designed and developed software product solutions, ensuring performance, security, and scalability for diverse projects.
+	Implement the client credentials grant type and limit access using oAuth 2.0 scopes in, along with implementation of Drupal developer portal with APIgee.
+	Implemented DevOps practices in Cross-Platform development using CI/CD pipelines to automate the build and integrated Git with Azure Repos.
+	Led the team in providing adequate software quality assurance by designing test cases, thoroughly executing test scenarios reporting bugs on all Clients’ products to increase delivery time by 80%.
+Software Specialist (Part-time)						                           Feb 2021 – Jan 2022
+Bdnaturetech – Lagos – Nigeria
+	Build a scalable and innovative software, delivering exceptional user experiences and driving continuous growth and expansion using AI, Edge Runtime, and RAG drive innovation. 
+	Developed a fast performance and seamless navigation application and Provides secure authentication.
+	Worked on optimizes data processing for AI workloads using NoSQL, and also use Langchain to enhances text analysis and generation, while I utilize the OpenAI to provides state-of-the-art AI capabilities of the application.
+Back End Developer  (Internship)      						                            Jun 2022 – Sep 2022
+Elakk Technologies.  Hyderabad - India
+	Designed RESTful API endpoints using best practices for resource naming HTTP methods and implementing CRUD functionality to ensure data integration and security.
+	Exposure to unit testing of applications using the Junit framework and understanding of writing and executing test cases.
+	I achieved a matched skill of sensitive Data and adding XML support, this also help us in view of Mashing the client application Traffic and caching.
+	Effective collaboration actively engaging with the front-end developers, ensured a cohesive integration between the API’s functionality and the user interface. 
+Python Programming Language Instructor (Internship)				             July 2021 – Sep 2021
+Triluxo (Brainlox) Technologies.  Utter Pradesh - India
+	Assumed Teaching responsibility and guided a diverse group of 30 students at the intermediate level of programming language
+	Provided a design guidance to students for various deployable projects showcasing desktop user interface development, database management, and machine learning. This involves utilizing frameworks like PyQT, employing database solutions such as SQLite, and implementing machine learning functionalities with TensorFlow, among other relevant tools and frameworks.
+ATM Software Engineer				                                                                     Aug 2018 – Nov 2020
+Ark Technologies Group.  Lagos - Nigeria
+	Provided technical support to external, and internal teams, via phone, email, or in-person. 
+	Write clean continuous software development and solutional code.
+	Installed and configured the IIS web server on Microsoft Windows 2012, 2012R2 and 2016 servers.
+	Deployed and managed various file server’s backup servers and active directories for easy data administration and accessibility.
 
 PROFESSIONAL EXPERIENCE
 
 Ark Technologies Group, Aug 2018 – Nov 2020
 Address: 4B Idowu Martins St, Victoria Island 101241, Lagos, Nigeria
-Position: Software Technical Engineer 
+Position: Software  Engineer 
 Full-time paid
 
 PROJECTS
@@ -128,7 +197,7 @@ PROFESSIONAL EXPERIENCE
 
 Edygrad Private Ltd. July 2023 – Serving Notice period till 23rd November 2023
 Address: NO 3, Innovation Valley Hill, IT-Sez, Madhurawada, Visakhapatnam, Andhra Pradesh 530048. India
-Position: Chief Technical Officer 
+Position: Full Stack Developer
 Full-time paid
 
 PROJECTS
@@ -180,8 +249,7 @@ BSc in Computer Application, Gitam University, Visakhapatnam, Andhra Pradesh, In
 BS in Computer Science, University of Ilorin, Ilorin, Kwara state, Nigeria,
 09/2014-08/2018 GPA is 4.13
 
-State Senior Grammer School, Surulere Lagos. Nigeria
-09/2011-05/2014 SSCE
+
 
 
 

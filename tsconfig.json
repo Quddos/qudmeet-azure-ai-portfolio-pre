@@ -1,5 +1,12 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@/components/*": ["components/*"],  // Correct alias
+      "@/lib/*": ["lib/*"]
+      
+    },
     "target": "ES2017",
     "lib": [
       "dom",
